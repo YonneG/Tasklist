@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { ModalController } from '@ionic/angular';
-import { toDoItem } from 'src/app/interfaces/to-do-item.service';
+import { toDoItem } from 'src/app/interfaces/to-do-item';
 import { FormControl, FormGroup } from '@angular/forms';
 
 @Component({

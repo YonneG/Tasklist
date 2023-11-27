@@ -3,7 +3,7 @@ import { DataService } from '../../services/data.service';
 import { ItemReorderEventDetail } from '@ionic/angular';
 import { ModalController } from '@ionic/angular';
 import { Modal } from '../home/modal/modal.page';
-import { toDoItem } from 'src/app/interfaces/to-do-item.service';
+import { toDoItem } from 'src/app/interfaces/to-do-item';
 
 @Component({
   selector: 'app-home',
