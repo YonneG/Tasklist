@@ -24,3 +24,16 @@
 @import "@ionic/angular/css/text-alignment.css";
 @import "@ionic/angular/css/text-transformation.css";
 @import "@ionic/angular/css/flex-utils.css";
+
+.modal {
+	&::part(backdrop) {
+		background-color: grey;
+	}
+	&::part(content) {
+		width: 75%;
+		height: 50%;
+		border-radius: 12px;
+		margin: auto;
+		border: black 2px solid;
+	}
+}

@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-item class="test">
+    <ion-button class="button-check" (click)="acceptModal()">
+      <ion-icon name="checkmark-outline" slot="icon-only"></ion-icon>
+    </ion-button>
+    <ion-title>Edit task</ion-title>
+    <ion-button class="button-close" (click)="dismissModal()">
+      <ion-icon name="close-outline" slot="icon-only"></ion-icon>
+    </ion-button>
+  </ion-item>
+</ion-header>
+
+<ion-content>
+  <form [formGroup]="formData">
+    <ion-item>
+      <ion-input label="Task" class="input-name" formControlName="name" placeholder="{{name}}" (keypress)="keyEvent($event.keyCode)"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input label="Note" class="input-note" *ngIf="!note" formControlName="note" placeholder="Add a note" (keypress)="keyEvent($event.keyCode)"></ion-input>
+      <ion-input label="Note" class="input-note" *ngIf="note" formControlName="note" placeholder="{{note}}" (keypress)="keyEvent($event.keyCode)"></ion-input>
+    </ion-item>
+  </form>
+  <ion-item lines="none">
+    <ion-checkbox slot="start" [(ngModel)]="checked">Task finished</ion-checkbox>
+  </ion-item>
+</ion-content>

@@ -1,0 +1,16 @@
+.button {
+	width: 38px;
+  	height: 38px;
+	--border-radius: 50%;
+	&-check {
+		--background: var(--ion-color-cool-company3);
+	}
+	&-close {
+		--background: var(--ion-color-cool-company1);
+	}
+}
+
+ion-item.test {
+	--padding-start: 5px;
+	--inner-padding-end: 5px;
+}
